@@ -6,7 +6,7 @@ f3=2240;
 filename="u";
 b0=100;
 fs=16000;
-f0=[220];
+f0=[120,220];
 
 for j=1:columns(f0)
     r1 = exp(-b0*pi*1/fs);
@@ -40,6 +40,6 @@ for j=1:columns(f0)
     grid on;
     saveas(k,sprintf('output/Frequency_response_%s.png',filename));
     y=input_signal(h,b,a,f0(1,j),fs,0.5,filename);
-    windowing(y,w,fs,f0(1,j));
+    windowing(y,fs,f0(1,j));
 endfor
 

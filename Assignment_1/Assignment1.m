@@ -31,7 +31,7 @@ f0=[120,220];
 
 for j=1:columns(f0)
   for i=1:columns(f1)
-    r1 = exp(-b0*pi*1/fs);
+    r1 = exp(-50*pi*1/fs);
     theta1 = 2*pi*f1(1,i)*1/fs;
     r2 = exp(-b0*pi*1/fs);
     theta2 = 2*pi*f2(1,i)*1/fs;
