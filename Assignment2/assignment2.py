@@ -199,7 +199,7 @@ if __name__=='__main__':
     acf = np.correlate(output,output,mode="full")
     original_acf =np.correlate(window_signal_pre,window_signal_pre,mode="full")
     plot_acf(acf,'Autocorrelation function for the estimated signal','acf_estimated')
-    plot_acf(original_acf,'Autocorrelation function for the estimated signal','acf_original')
+    plot_acf(original_acf,'Autocorrelation function for the original signal','acf_original')
 
 
 
