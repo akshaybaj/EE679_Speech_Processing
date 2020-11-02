@@ -165,7 +165,7 @@ if __name__=='__main__':
 
     plt.figure()
     plt.title("Error signal energy plot")
-    plt.plot(20*log10(abs(e)),'b-*',linewidth=0.7)
+    plt.plot(10*log10(abs(e)),'b-*',linewidth=0.7)
     plt.ylabel("Energy error signal(dB)")
     plt.xlabel("Number of poles(p)")
     plt.xlim(xmin=0)
